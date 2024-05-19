@@ -23,7 +23,6 @@ import axios from 'axios';
 import { Avatar } from '@material-ui/core';
 import { ExitToApp } from '@material-ui/icons';
 import { useCookies } from "react-cookie";
-import { cookie } from 'express-validator';
 import Cookies from 'js-cookie';
 export default function Profile() {
   const dispatch = useDispatch();

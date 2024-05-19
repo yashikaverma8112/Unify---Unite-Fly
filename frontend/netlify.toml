@@ -1,6 +1,0 @@
-[build]
-  command = "npm run install:force && npm run build"
-  publish = "build"
-
-[context.production.environment]
-  NODE_VERSION = "14"  # Specify your Node version if needed

@@ -60,8 +60,5 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.4.1"
-  },
-  "resolutions": {
-    "@types/react": "^18.0.0"
   }
 }

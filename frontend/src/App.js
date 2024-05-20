@@ -14,7 +14,7 @@ import ForgotPassword from './components/auth/ForgotPassword';
 const App = () => { 
   return (
     <BrowserRouter>
-    
+
     <div className="relative">
 
     <Header />

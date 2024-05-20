@@ -13,7 +13,7 @@ app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
 // app.use(cors());
 app.use(cors({
-    origin: FRONTEND_URL, // Update with your frontend URL
+    origin: 'https://main--unify-where-knowledge-connects.netlify.app', // Update with your frontend URL
     credentials: true,
   }));
 app.use(bodyParser.json({limit:"50mb"}))

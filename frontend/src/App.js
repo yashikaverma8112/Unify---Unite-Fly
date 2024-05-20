@@ -11,7 +11,7 @@ import Profile from './components/Profile';
 import UserProfile from './components/UserProfile';
 import ForgotPassword from './components/auth/ForgotPassword';
 
-const App = () => {
+const App = () => { 
   return (
     <BrowserRouter>
     

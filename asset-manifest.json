@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Unify-Project/static/css/main.dec431eb.css",
+    "main.js": "/Unify-Project/static/js/main.c9e7aaab.js",
+    "index.html": "/Unify-Project/index.html",
+    "main.dec431eb.css.map": "/Unify-Project/static/css/main.dec431eb.css.map",
+    "main.c9e7aaab.js.map": "/Unify-Project/static/js/main.c9e7aaab.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dec431eb.css",
+    "static/js/main.c9e7aaab.js"
+  ]
+}

@@ -31,7 +31,7 @@ const ForgotPassword = () => {
             onChange={e => setPassword(e.target.value)}
           />
         </div>
-        <button onClick={handleResetPassword} className="btn btn-primary btn-block">Reset Password</button>
+        <button onClick={handleResetPassword} className="bg-slate-700 text-white p-2 mt-3 rounded-lg uppercase hover:opacity-95 disabled:opacity-80">Reset Password</button>
         {message && <div className="mt-3 alert alert-info">{message}</div>}
         <p className="mt-3 text-center">
           Remember your password? <a href="/sign-in">SignIn</a>

@@ -103,7 +103,7 @@ export default function SignIn() {
           >
           {loading ? 'Loading...' : 'Sign In'}
         </button>
-        {formData.email !=='' ?
+        {formData.email !==undefined ?
       <button className="btn btn-outline-light text-black" >
       <Link to ={`/forgot-password/${formData.email}`}>  Forgot Password?</Link>
         

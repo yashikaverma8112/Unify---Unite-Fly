@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import { selectUser } from "../feature/userSlice";
 import ModalContainer from './ModalContainer';
 import { useNavigate } from 'react-router-dom';
-
+import axios from 'axios';
 
 const UnifyBox = () => {
 
@@ -15,7 +15,32 @@ const UnifyBox = () => {
   const [question, setQuestion] = useState('');
   const user = useSelector(selectUser);
   const handleSubmit = async () =>{
-    setIsModalOpen(true)
+    const HEADER_QUESTION= process.env.REACT_APP_HEADER_QUESTION;
+    
+    setIsModalOpen(true);
+      const config = {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      };
+      const body = {
+        questionName: question,
+        questionUrl: inputUrl,
+        user: user,
+      };
+      if (question !== '') {
+  
+        try {
+          await axios.post(HEADER_QUESTION, body, config);
+          alert('Question Added Successfully');
+          window.location.href = '/';
+        } catch (e) {
+          console.log(e);
+          alert('Error in adding Questions');
+        }
+      }
+   
+  
   }
   return (
     <div className='unifyBox'>

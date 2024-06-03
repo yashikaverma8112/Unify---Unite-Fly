@@ -28,7 +28,7 @@ export const MyQuestions = () => {
   return (
     <div className="container min-vh-100 flex justify-center items-center column " >
 
-     <div style={{marginTop:"92px"}} className='w-50'>
+     <div style={{marginTop:"92px"}} >
     <div>
       <h5 className='text-secondary fw-bold'>{filteredQuestions.length} Questions Posted By You </h5>
     </div>

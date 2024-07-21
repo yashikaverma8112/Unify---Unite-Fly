@@ -34,9 +34,7 @@ const ForgotPassword = () => {
         <button onClick={handleResetPassword} className="bg-slate-700 text-white p-2 mt-3 rounded-lg uppercase hover:opacity-95 disabled:opacity-80">Reset Password</button>
         {message && <div className="mt-3 alert alert-info">{message}</div>}
         <p className="mt-3 text-center">
-          Remember your password? <Link to='/sign-in'>
-              <span className='text-blue-500'>Sign in</span>
-            </Link>
+          Remember your password? <a href="/sign-in">SignIn</a>
         </p>
       </div>
     </div>
